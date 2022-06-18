@@ -1,0 +1,19 @@
+{
+    "name": "root/app",
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "infection/infection": "^0.26.11",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
+    },
+    "autoload": {
+        "App\\": "src",
+        "tests\\": "tests"
+    }
+}
